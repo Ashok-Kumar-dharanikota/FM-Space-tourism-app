@@ -1,0 +1,62 @@
+.destinationpage {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./../../assets/background-destination-desktop.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.destinationpage-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width: 100vw;
+  }
+  
+  
+  .destinationpage-right h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: lighter;
+    color: #D0D6F9;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    line-height: 2;
+  }
+  
+  .destinationpage-right h1 {
+    font-family: 'Bellefair', serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 100px;
+    
+  }
+  
+  .destinationpage-right p {
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 32px;
+    font-size: 18px;
+    width: 360px;
+  }
+  
+  .container-right {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    align-self: flex-end;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+  }
+  
+    

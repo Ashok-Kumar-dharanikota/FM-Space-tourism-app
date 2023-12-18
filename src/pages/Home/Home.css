@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.homepage {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./../../assets/background-home-desktop.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+  margin: 12%;
+  margin-bottom: 7%;
+}
+
+
+.container-left h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: lighter;
+  color: #D0D6F9;
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.container-left h1 {
+  font-family: 'Bellefair', serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 150px;
+  
+}
+
+.container-left p {
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed', sans-serif;
+  line-height: 32px;
+  font-size: 18px;
+  width: 360px;
+}
+
+.container-right {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  align-self: flex-end;
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+}
+
+.container-right:hover::before {
+  scale: 1.5;
+  cursor: pointer;
+}
+
+
+.container-right::before {
+  transition: scale 200ms ease-in-out;
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color: rgba(225, 225, 225, 0.2);
+  border-radius: 50%;
+  position: absolute;
+}
+
