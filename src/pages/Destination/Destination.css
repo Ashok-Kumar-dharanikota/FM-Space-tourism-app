@@ -4,21 +4,30 @@
     background-image: url('./../../assets/background-destination-desktop.jpg');
     background-size: cover;
     display: flex;
-    align-items: center;
-    
+    flex-direction: column;
 }
 
 
-.destinationpage-container {
+.destinationpage p {
+  color: #D0D6F9;
+  font-family: 'Barlow Condensed', sans-serif;
+  line-height: 32px;
+  font-size: 18px;
+  width: 360px;
+}
+
+
+
+/* .destinationpage-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: white;
     width: 100vw;
-  }
+  } */
   
   
-  .destinationpage-right h4 {
+  /* .destinationpage-right h4 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: lighter;
     color: #D0D6F9;
@@ -59,4 +68,4 @@
     font-size: 32px;
   }
   
-    
+     */
