@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom'
 import './Planet.css';
 
 const Planet = ({ image }) => {
+
+
+
   return (
     <div style={{ display: 'flex', marginTop: 90, justifyContent: 'space-between', marginLeft: 300, marginRight: 250, alignItems: 'center' }}>
-      <img style={{ width: 400, height: 400 }} src={image} alt="" />
+      <img style={{ width: 400, height: 400 }} src={image} alt="planet" />
 
       <div style={{display: 'flex', flexDirection: 'column'}}>
 

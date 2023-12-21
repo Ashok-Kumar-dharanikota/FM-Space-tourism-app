@@ -3,19 +3,33 @@ import './Destination.css'
 import Moon from './../../assets/image-moon.png';
 import Title from '../../components/Title/Title';
 import Planet from '../../components/Planet/Planet';
-import data from '../../data/data.json';
-import { Link } from 'react-router-dom';
+import PlanetComponent from '../../components/PlanetComponent';
+import data from '../../data/data';
 
 function Destination() {
 
+  const planet = data.destinations[3];
 
   return (
     <section className='destinationpage'>
 
 
-    <Title page={"01"} title={"Pick your destination"}/>
+      <Title page={"01"} title={"Pick your destination"} />
 
-    {/* <nav className='planet-navbar'>
+      <div>
+        <nav>
+          <span  >Moon</span>
+          <span  >Mars</span>
+          <span   >Europa</span>
+          <span  >Titan</span>
+
+        </nav>
+      </div>
+
+
+      <PlanetComponent />
+
+      {/* <nav className='planet-navbar'>
        <Link className='planet-navbar-item' to={"/destination"} >Moon</Link>
        <Link to={"/destination"} >Mars</Link>
        <Link to={"/destination"} >Europa</Link>
@@ -23,7 +37,7 @@ function Destination() {
 
     </nav> */}
 
-    <Planet image={Moon} />
+      {/* <Planet image={Moon} /> */}
 
       {/* <div className='destinationpage-container'>
 
