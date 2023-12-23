@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import HeadingTwo from './HeadingTwo/HeadingTwo'
-import MOON from './../assets/planets/image-moon.png';
 import data from '../data/data';
 
 const PlanetComponent = () => {
@@ -21,10 +20,10 @@ const PlanetComponent = () => {
 
                 <div>
                     <nav className='planet-navbar'>
-                        <span className='planet-navbar-item' to={"/destination"} onClick={() => handleClick(0)} >Moon</span>
-                        <span className='planet-navbar-item' to={"/destination"} onClick={() => handleClick(1)}>Mars</span>
-                        <span className='planet-navbar-item' to={"/destination"} onClick={() => handleClick(2)}>Europa</span>
-                        <span className='planet-navbar-item' to={"/destination"} onClick={() => handleClick(3)}>Titan</span>
+                        <span className='planet-navbar-item' onClick={() => handleClick(0)} style={{color: num===0 ? 'white' : '#D0D6F9' }} >Moon</span>
+                        <span className='planet-navbar-item' onClick={() => handleClick(1)} style={{color: num===1 ? 'white' : '#D0D6F9' }}>Mars</span>
+                        <span className='planet-navbar-item' onClick={() => handleClick(2)} style={{color: num===2 ? 'white' : '#D0D6F9' }}>Europa</span>
+                        <span className='planet-navbar-item' onClick={() => handleClick(3)} style={{color: num===3 ? 'white' : '#D0D6F9' }}>Titan</span>
 
                     </nav>
 

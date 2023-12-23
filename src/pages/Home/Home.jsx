@@ -4,23 +4,24 @@ import AnimatedTextWord from '../../components/AnimatedTextWord'
 import HeadingOne from '../../components/HeadingOne/HeadingOne'
 import BodyText from '../../components/BodyText/BodyText'
 
+
 function Home() {
 
-  const desc = "Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!";
+  const home = {
+    title: "SO, you want to travel to",
+    name: "space",
+    description: "Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!",
+  };
+
 
   return (
     <section className='homepage'>
 
       <div className='homepage-container'>
         <div className='container-left'>
-          {/* <h4>So, you want to travel to</h4> */}
-          <AnimatedTextWord text="SO, you want to travel to" />
-          {/* <h1>Space</h1> */}
-          <HeadingOne text={"space"} />
-           <p>Let’s face it; if you want to go to space, you might as well genuinely go to
-            outer space and not hover kind of on the edge of it. Well sit back, and relax
-            because we’ll give you a truly out of this world experience!</p> 
-
+          <AnimatedTextWord text={home.title} />
+          <HeadingOne text={home.name} />
+          <BodyText text={home.description} />
 
         </div>
 

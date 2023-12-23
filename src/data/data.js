@@ -45,7 +45,7 @@
     {
       "name": "Douglas Hurley",
       "images": {
-        "png": "./assets/crew/image-douglas-hurley.png",
+        "png": require("../assets/crew/image-douglas-hurley.png"),
         "webp": "./assets/crew/image-douglas-hurley.webp"
       },
       "role": "Commander",
