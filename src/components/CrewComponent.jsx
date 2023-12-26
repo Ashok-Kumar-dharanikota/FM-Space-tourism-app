@@ -8,7 +8,7 @@ const CrewComponent = ({ crewList }) => {
 
 
   return (
-    <div style={{display: 'flex', justifyContent: 'space-evenly', alignItems: 'flex-end', position: 'absolute'}}>
+    <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', position: 'absolute'}}>
 
       <div>
         <div>
@@ -20,7 +20,7 @@ const CrewComponent = ({ crewList }) => {
       </div>
 
       <div>
-        <img src={crew.images.png} alt="" />
+        <img src={crew.images.png} style={{}} alt="" />
       </div>
     </div>
     
