@@ -4,11 +4,13 @@ import Home from './pages/Home/Home';
 import Destination from './pages/Destination/Destination';
 import Crew from './pages/Crew/Crew';
 import Technology from './pages/Technology/Technology';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
     <>
     
+    <NavBar />
 
     <section className='App'>
        <Routes>
