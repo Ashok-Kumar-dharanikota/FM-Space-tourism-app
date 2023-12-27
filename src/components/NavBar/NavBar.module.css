@@ -27,11 +27,12 @@
     padding: 20px 30px;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
-    width: 830px;
+    width: 80%;
     height: 96px;
     display: flex;
     justify-content: center;
     align-items: center;
+    right: 0;
 }
 
 .list {
@@ -56,15 +57,25 @@ span {
     margin-right: 10px;
 }
 
-.line {
-    width: 35rem;
+/* .line {
+    width: 400px;
+    min-width: 37%;
     height: 1px;
     flex-shrink: 0;
     opacity: 0.2515;
     background: #fff;
     position: absolute;
-    margin-left: 180px;
-    margin-right: 100px;
-    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-right: 52%;
+} */
+
+.line {
+    margin-left: 5rem;
+    width: 50%;
+    height: 1px;
+    background: #fff;
+    opacity: 0.2515;
+    margin-right: -30px;
     z-index: 2;
 }

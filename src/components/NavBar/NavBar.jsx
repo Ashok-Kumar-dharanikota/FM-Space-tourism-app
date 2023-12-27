@@ -11,7 +11,7 @@ function NavBar() {
 
       <img src={logo} alt="" />
 
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', alignItems: 'center',  width: '100%'}}>
         <div className={style.line}>
 
         </div>
