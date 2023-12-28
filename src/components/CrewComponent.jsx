@@ -8,11 +8,11 @@ const CrewComponent = ({ crewList }) => {
 
 
   return (
-    <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', position: 'absolute'}}>
+    <div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', position: 'absolute', width: '100%'}}>
 
       <div>
         <div>
-          <h1 style={{ fontFamily: 'Bellefair', fontWeight: 'lighter', textTransform: 'uppercase', fontSize: 32, color: 'white', opacity: "50.42%" }}>{crew.role}</h1>
+          <h1 style={{ fontFamily: 'Bellefair', fontWeight: 'lighter', textTransform: 'uppercase', fontSize: 32, color: 'white', opacity: "50.42%", lineHeight: 2 }}>{crew.role}</h1>
           <HeadingThree text={crew.name} />
         </div>
         <BodyText text={crew.bio} />
@@ -20,7 +20,7 @@ const CrewComponent = ({ crewList }) => {
       </div>
 
       <div>
-        <img src={crew.images.png} style={{}} alt="" />
+        <img src={crew.images.png} style={{width: '100%', height: 554, objectFit: 'contain'}} alt="" />
       </div>
     </div>
     

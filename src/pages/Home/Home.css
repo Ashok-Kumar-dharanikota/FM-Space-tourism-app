@@ -55,4 +55,21 @@
 }
 
 
+/* Small devices like portrait tablets and large phones with 600px and above. */
+@media only screen and (min-width: 375px) { 
+
+  /* .homepage {
+    background-image: url('./../../assets/home/background-home-mobile.jpg');
+  }
+
+  .homepage-container {
+    display: block;
+  } */
+ }
+
+
+/* Medium devices like landscape tablets, 768px and above. */
+@media only screen and (min-width: 768px) {  }
+
+
 
