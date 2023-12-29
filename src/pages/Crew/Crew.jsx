@@ -13,6 +13,7 @@ function Crew() {
 
       <Title page={"02"} title={"Meet your crew"} />
 
+
       <CrewComponent crewList={crewList} />
 
     </section>
