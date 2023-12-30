@@ -1,0 +1,40 @@
+.technologyPage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./../../assets/technology/background-technology-desktop.jpg');
+    background-size: cover;
+}
+
+.techcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftcontainer {
+    display: flex;
+    gap: 50px;
+    margin-left: 150px;
+    align-items: center;
+}
+
+.num {
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bellefair';
+    font-weight: 400;
+}
+
+.num:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 250ms ease-in;
+}

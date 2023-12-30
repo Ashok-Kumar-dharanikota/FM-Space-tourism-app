@@ -4,14 +4,12 @@ import BodyText from './BodyText/BodyText';
 
 const CrewComponent = ({ crewList }) => {
 
-  // const crew = crewList[0];
-
 
   return (
-    <div style={{ display: 'flex', overflowX: 'auto', scrollSnapType: "x mandatory", scrollBehavior: 'smooth'}}>
+    <div style={{ display: 'flex', overflowX: 'auto', scrollSnapType: "x mandatory", scrollBehavior: 'smooth' }}>
       {crewList.map((crew) => (
         <>
-          <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', position: 'relative', width: '100%', flex: "1 0 100%", scrollSnapAlign: 'start'}}>
+          <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', position: 'relative', width: '100%', flex: "1 0 100%", scrollSnapAlign: 'start' }}>
 
             <div>
               <div>
@@ -29,9 +27,15 @@ const CrewComponent = ({ crewList }) => {
         </>
       ))}
 
-      {/* <div style={{position: 'absolute', width: 200, height: 50, bottom: 0, marginLeft: 120, marginBottom: 30, backgroundColor: 'white'}}>
+      {/* <ul style={{position: 'absolute', width: 200, height: 50, bottom: 0, marginLeft: 130, marginBottom: 30, display: 'flex', gap: 24}}>
+        <li style={{width: 10, height: 10, backgroundColor: 'white', borderRadius: '50%'}}></li>
+        <li style={{width: 10, height: 10, backgroundColor: 'white', borderRadius: '50%'}}></li>
+        <li style={{width: 10, height: 10, backgroundColor: 'white', borderRadius: '50%'}}></li>
+        <li style={{width: 10, height: 10, backgroundColor: 'white', borderRadius: '50%'}}></li>
 
-      </div> */}
+      </ul>
+ */}
+
 
     </div >
 
