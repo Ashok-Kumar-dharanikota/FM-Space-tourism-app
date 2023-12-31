@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
+import menu from '../../assets/icon-hamburger.svg'
 
 //style
 import style from './NavBar.module.css';
@@ -11,7 +12,7 @@ function NavBar() {
 
       <img src={logo} alt="" />
 
-      <div style={{ display: 'flex', alignItems: 'center',  width: '100%'}}>
+      <div className={style.container}>
         <div className={style.line}>
 
         </div>
@@ -27,6 +28,8 @@ function NavBar() {
         </div>
 
       </div>
+
+      <img src={menu} alt="" />
 
     </nav>
 

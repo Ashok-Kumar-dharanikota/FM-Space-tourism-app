@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,19 +80,6 @@ span {
     margin-right: 10px;
 }
 
-/* .line {
-    width: 400px;
-    min-width: 37%;
-    height: 1px;
-    flex-shrink: 0;
-    opacity: 0.2515;
-    background: #fff;
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    margin-right: 52%;
-} */
-
 .line {
     margin-left: 5rem;
     width: 50%;
@@ -101,4 +88,109 @@ span {
     opacity: 0.2515;
     margin-right: -30px;
     z-index: 2;
+} 
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}*/
+
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    height: 100%;
+    align-items: center;
 }
+
+.item a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-family: "Barlow Condensed";
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    height: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.item a::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+}
+
+.item:hover::after {
+    height: 3px;
+}
+
+.item::after {
+    transition: height 100ms ease-in;
+    content: '';
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+
+
+}
+
+.active {
+    width: 100px;
+    height: 2px;
+}
+
+span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* Small devices like portrait tablets and large phones with 600px and above. */
+@media only screen and (max-width: 375px) {
+
+    .navbar {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding: 20px;
+
+    }
+
+    .line {
+        display: none;
+    }
+
+    .list_container {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+        top: 0;
+        width: 70%;
+    }
+
+    .list {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -100px;
+    }
+
+    .item {
+        margin-right: auto;
+        margin-left: 40px;
+    }
+}
+
+
+/* Medium devices like landscape tablets, 768px and above. */
+@media only screen and (max-width: 768px) {}

@@ -1,9 +1,10 @@
 import React from 'react'
+import style from './HeadingOne.module.css'
 
 const HeadingOne = ({ text }) => {
 
     return (
-        <h1 style={{fontFamily: 'Bellefair', fontWeight: 'lighter', textTransform: 'uppercase', fontSize: '8rem', color: 'white'}}>{text}</h1>
+        <h1 className={style.headingone}>{text}</h1>
     )
 }
 

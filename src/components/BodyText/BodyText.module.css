@@ -1,0 +1,22 @@
+.bodytext {
+    width: 360px;
+    color: '#D0D6F9';
+    font-family: 'Barlow Condensed';
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 1;
+}
+
+/* Small devices like portrait tablets and large phones with 600px and above. */
+@media only screen and (max-width: 375px) {
+
+    .bodytext {
+        font-size: 15px;
+    }
+
+  }
+  
+  
+  /* Medium devices like landscape tablets, 768px and above. */
+  @media only screen and (min-width: 768px) {}

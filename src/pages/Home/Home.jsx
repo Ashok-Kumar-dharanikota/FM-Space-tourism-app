@@ -19,7 +19,8 @@ function Home() {
 
       <div className='homepage-container'>
         <div className='container-left'>
-          <AnimatedTextWord text={home.title} />
+          {/* <AnimatedTextWord text={home.title} /> */}
+          <p className='homepage-title'>{home.title}</p>
           <HeadingOne text={home.name} />
           <BodyText text={home.description} />
 
