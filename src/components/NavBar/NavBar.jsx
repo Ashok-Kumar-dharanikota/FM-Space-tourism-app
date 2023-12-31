@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import menu from '../../assets/icon-hamburger.svg'
+import close from '../../assets/icon-close.svg'
 
 //style
 import style from './NavBar.module.css';
 
 function NavBar() {
+
+  const [sidenav, setsidenav] = useState(true);
+
+
+  const handleClick = () => {
+    setsidenav(!sidenav);
+  }
+
   return (
     <nav className={style.navbar}>
 
@@ -17,7 +26,7 @@ function NavBar() {
 
         </div>
 
-        <div className={style.list_container}>
+        <div style={{display: sidenav ? 'block' : 'none'}} className={style.list_container}>
           <ul className={style.list}>
             <li className={style.item}><NavLink to="/" ><span>00</span>Home</NavLink></li>
             <li className={style.item}><NavLink to="/destination" ><span>01</span>Destination</NavLink></li>
@@ -28,8 +37,8 @@ function NavBar() {
         </div>
 
       </div>
-
-      <img src={menu} alt="" />
+ 
+      <img onClick={handleClick} className={style.closeandopen} src={sidenav ? close : menu} alt="" />
 
     </nav>
 
