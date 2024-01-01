@@ -9,7 +9,7 @@ import style from './NavBar.module.css';
 
 function NavBar() {
 
-  const [sidenav, setsidenav] = useState(true);
+  const [sidenav, setsidenav] = useState(false);
 
 
   const handleClick = () => {
@@ -26,7 +26,7 @@ function NavBar() {
 
         </div>
 
-        <div style={{display: sidenav ? 'block' : 'none'}} className={style.list_container}>
+        <div style={{display: sidenav ? 'none' : 'block'}} className={style.list_container}>
           <ul className={style.list}>
             <li className={style.item}><NavLink to="/" ><span>00</span>Home</NavLink></li>
             <li className={style.item}><NavLink to="/destination" ><span>01</span>Destination</NavLink></li>

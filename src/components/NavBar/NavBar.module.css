@@ -236,4 +236,10 @@ span {
 
 
 /* Medium devices like landscape tablets, 768px and above. */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 0;
+        padding-left: 20px;
+    }
+}
