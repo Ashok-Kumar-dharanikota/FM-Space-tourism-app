@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -177,7 +177,6 @@ span {
     display: none;
 }
 
-/* Small devices like portrait tablets and large phones with 600px and above. */
 @media only screen and (max-width: 375px) {
 
     .navbar {
@@ -235,11 +234,107 @@ span {
 }
 
 
-/* Medium devices like landscape tablets, 768px and above. */
 @media only screen and (max-width: 768px) {
 
     .navbar {
         padding: 0;
         padding-left: 20px;
     }
+} */
+
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding: 20px;
+
+    }
+
+    .line {
+        display: none;
+    }
+
+    .list_container {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+        top: 0;
+        width: 70%;
+        display: block;
+        transition: all 500ms ease-in;
+    }
+
+    .list {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -100px;
+        list-style: none;
+        gap: 50px;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+
+    }
+
+    .item {
+        margin-right: auto;
+        margin-left: 40px;
+        height: auto;
+    }
+
+    .item a {
+        text-decoration: none;
+        color: white;
+        font-family: "Barlow Condensed";
+    }
+
+    .item a::after {
+        display: none;
+    }
+
+    .closeandopen {
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+    }
+
+    span {
+        font-weight: bold;
+        margin-right: 10px;
+        opacity: 0.5;
+    }
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        padding: 0;
+        padding: 30px 0px 0px 40px;
+    }
+
+    .line {
+        display: block;
+    }
+
+    .list_container {
+        position: relative;
+    }
+
+} 
+
+@media only screen and (min-width: 1080px) {
+    
 }

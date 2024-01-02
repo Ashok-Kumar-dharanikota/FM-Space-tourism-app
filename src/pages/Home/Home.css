@@ -118,7 +118,7 @@
 
 
 /* Small devices like portrait tablets and large phones with 600px and above. */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
 
   .homepage {
     background-image: url('./../../assets/home/background-home-mobile.jpg');
